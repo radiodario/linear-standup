@@ -83,6 +83,7 @@ function buildPrompt(tasks: CategorizedTasks, viewUrl?: string): string {
   prompt += `Write this as a single, natural-sounding paragraph that I can paste into Slack. `;
   prompt += `Make it sound human and conversational, not like a list. `;
   prompt += `Focus on what was accomplished and what's happening next.`;
+  prompt += `What’s on deck to complete by the end of the week`;
   prompt += `This is work you did, so use "I" statements.\n`;
 
   if (viewUrl) {
